@@ -20,7 +20,7 @@ mongoose.connect("mongodb://nisha-demo:EGCJSBPG25TEOA9jkT1soMNyoILyCHOzSkD1X8nQt
 res.status(200).json({"response": "successful"});
 console.log("Connection Successful..."+response);
 }).catch((err)=>console.log("Error:"+err));
-
+// '/' route
 app.get("/",(req,res)=>{
   res.send("<p>Hello world...!!!</p>")
 });
@@ -49,7 +49,7 @@ coin.save().then((saved)=>{
 
 });
 
-// Fetch
+// Fetch Most Gained Coins
 app.get("/MostGainedCoinsFetch",(req,res)=>{
 
   
@@ -60,7 +60,7 @@ app.get("/MostGainedCoinsFetch",(req,res)=>{
   })
   // console.log(data12);
 });
-// Fetch
+// Fetch Trusted Coins
 app.get("/TrustedCoinsFetch",(req,res)=>{
 
   
@@ -74,7 +74,7 @@ app.get("/TrustedCoinsFetch",(req,res)=>{
   })
   // console.log(data12);
 });
-// Fetch
+// Fetch Loss Coins
 app.get("/MostLossedCoinsFetch",(req,res)=>{
 
   
@@ -83,7 +83,7 @@ app.get("/MostLossedCoinsFetch",(req,res)=>{
   })
   // console.log(data12);
 });
-// Fetch
+// Fetch Memecoins
 app.get("/MemeCoinsFetch",(req,res)=>{
 
   
@@ -92,7 +92,7 @@ app.get("/MemeCoinsFetch",(req,res)=>{
   })
   // console.log(data12);
 });
-// Fetch
+// Fetch HoghVolumeCoins
 app.get("/HighVolumeCoinsFetch",(req,res)=>{
 
   
